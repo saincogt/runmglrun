@@ -96,24 +96,27 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
-              <Link to={finalLogoLink} className={'navBarBrand'}>
+              {/* <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
                   src={logo.image !== '' ? logo.image : logoImg}
                   alt={'logo'}
                 />
-              </Link>
-              <div
+              </Link> */}
+              {/* <div
                 className={'headerTitle displayInline'}
                 dangerouslySetInnerHTML={{ __html: headerTitle }}
-              />
+              /> */}
+              <Link to="/" className={'headerTitle displayInline'}>
+                <h1>{headerTitle}</h1>
+              </Link>
             </div>
-            {config.header.social ? (
+            {/* {config.header.social ? (
               <ul
                 className="socialWrapper visibleMobileView"
                 dangerouslySetInnerHTML={{ __html: config.header.social }}
               ></ul>
-            ) : null}
+            ) : null} */}
             {isSearchEnabled ? (
               <div className={'searchWrapper hiddenMobile navBarUL'}>
                 <LoadableComponent collapse={true} indices={searchIndices} />
@@ -162,7 +165,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 {tweetText !== '' || githubUrl !== '' ? (
                   <li className="divider hiddenMobile"></li>
                 ) : null}
-                {config.header.social ? (
+                {/* {config.header.social ? (
                   <li className={'hiddenMobile'}>
                     <ul
                       className="socialWrapper"
@@ -180,7 +183,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                       Star
                     </GitHubButton>
                   </li>
-                ) : null}
+                ) : null} */}
                 <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}

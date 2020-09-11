@@ -93,11 +93,11 @@ export default class MDXRuntimeTest extends Component {
         <div className={'titleWrapper'}>
           <StyledHeading>{mdx.fields.title}</StyledHeading>
           <Edit className={'mobileView'}>
-            {docsLocation && (
+            {/* {docsLocation && (
               <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
                 <img src={gitHub} alt={'Github logo'} /> Edit on GitHub
               </Link>
-            )}
+            )} */}
           </Edit>
         </div>
         <StyledMainWrapper>

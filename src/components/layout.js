@@ -16,10 +16,16 @@ const Wrapper = styled('div')`
   .sideBarUL li a {
     color: ${({ theme }) => theme.colors.text};
   }
+  .collapser svg path {
+    fill: ${({ theme }) => theme.colors.text} !important;
+  }
 
   .sideBarUL .item > a:hover {
     background-color: #1ed3c6;
     color: #fff !important;
+    .collapser svg path {
+      fill: #fff !important;
+    }
 
     /* background: #F8F8F8 */
   }
@@ -69,12 +75,12 @@ const Layout = ({ children, location }) => (
         <LeftSideBarWidth className={'hiddenMobile'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        {config.sidebar.title ? (
+        {/* {config.sidebar.title ? (
           <div
             className={'sidebarTitle sideBarShow'}
             dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
           />
-        ) : null}
+        ) : null} */}
         <Content>
           <MaxWidth>{children}</MaxWidth>
         </Content>

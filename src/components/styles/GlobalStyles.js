@@ -227,7 +227,6 @@ export const baseStyles = injectGlobal`
     line-height: 1.5;
     font-weight: 300;
     color: #fff !important;
-    margin-top: 16px;
     text-transform: uppercase;
   }
   .headerTitle a {
@@ -320,7 +319,7 @@ export const baseStyles = injectGlobal`
     border: 0 !important;
     background-color: rgb(245, 247, 249); /* !important; */
   }
-  
+
   blockquote {
     color: rgb(116, 129, 141);
     margin: 0px 0px 24px;
@@ -454,7 +453,7 @@ export const baseStyles = injectGlobal`
     color: #fff !important;
   }
   .firstLevel ul li .collapser svg path {
-    fill: #fff !important;
+    ${'' /* fill: #fff !important; */}
   }
   .active .collapser > svg > path {
     fill: #001933 !important;
@@ -478,6 +477,14 @@ export const baseStyles = injectGlobal`
     width: 100%;
     padding-right: 35px;
     padding-left: 15px;
+
+  }
+  .item a button svg path {
+    fill: #1ED3C6 !important;
+  }
+
+  .item .active a button svg path {
+    fill: #fff !important;
   }
 
   .showFrontLine .item > a:hover {
