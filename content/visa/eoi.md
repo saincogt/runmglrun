@@ -1,7 +1,7 @@
 ---
 title: '澳洲技术移民（EOI）评分标准'
-metaTitle: 'Syntax Highlighting is the meta title tag for this page'
-metaDescription: 'This is the meta description for this page'
+metaTitle: '澳洲技术移民（EOI）评分标准'
+metaDescription: '澳洲技术移民（EOI）评分标准'
 ---
 
 # EOI (Expression of Interest) 概述

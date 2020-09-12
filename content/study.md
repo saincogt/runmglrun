@@ -1,7 +1,7 @@
 ---
 title: '留学相关'
-metaTitle: 'Syntax Highlighting is the meta title tag for this page'
-metaDescription: 'This is the meta description for this page'
+metaTitle: '留学相关'
+metaDescription: '留学相关描述'
 ---
 
 这是个留学相关问题的 sub page.
